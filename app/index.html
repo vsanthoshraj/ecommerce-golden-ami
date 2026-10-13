@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudCart | Demo Store</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { margin: 0; background: #f3f6fb; color: #172033; }
+    header { padding: 22px 8%; background: #172554; color: white; }
+    header strong { font-size: 1.35rem; }
+    main { max-width: 980px; margin: 48px auto; padding: 0 20px; }
+    .hero { padding: 42px; border-radius: 18px; background: white; box-shadow: 0 8px 28px #17255412; }
+    .tag { display: inline-block; padding: 6px 10px; border-radius: 99px; background: #dcfce7; color: #166534; font-size: .85rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3.3rem); margin: 18px 0 12px; }
+    p { line-height: 1.65; color: #536078; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 22px; }
+    .product { padding: 20px; background: white; border-radius: 12px; }
+    .emoji { font-size: 2rem; }
+    footer { padding: 24px; text-align: center; color: #64748b; }
+  </style>
+</head>
+<body>
+  <header><strong>🛒 CloudCart</strong> — E-commerce Demo</header>
+  <main>
+    <section class="hero">
+      <span class="tag">Demo app is running</span>
+      <h1>Welcome to CloudCart</h1>
+      <p>This sample storefront is baked into an immutable Golden AMI using HashiCorp Packer. New Auto Scaling instances can serve this page without installing NGINX during startup.</p>
+      <div class="products">
+        <article class="product"><div class="emoji">🎧</div><h3>Wireless Audio</h3><p>Everyday sound, made simple.</p></article>
+        <article class="product"><div class="emoji">⌚</div><h3>Smart Watch</h3><p>Keep your day in sync.</p></article>
+        <article class="product"><div class="emoji">🎒</div><h3>Travel Essentials</h3><p>Ready for your next trip.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer>CloudCart demo · Served by NGINX on an AWS EC2 instance</footer>
+</body>
+</html>
