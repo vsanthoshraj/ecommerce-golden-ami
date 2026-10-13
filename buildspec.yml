@@ -31,7 +31,7 @@ phases:
       - echo "Packer build stage finished."
       - test -s manifest.json
       - cat manifest.json
-
+  
 artifacts:
   files:
     - manifest.json
